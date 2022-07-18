@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <meta author="gagandeep">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="download.ico">
+  <style>
+    body{
+      background-color: aqua;
+    }
+    hr{
+      border-style:none;
+      border-top-style: dashed;
+      border-top-width:2px;
+      color:aqua;
+      width:99%;
+    }
+  </style>
+
+</head>
+<body style="background-color:#F9F2ED;">
+  <p>
+  <hr size="4">
+   <center><h2>CSS CODEBOOK</h2></center>
+   <center><pre>           -By gagan deep</pre></center>
+   <hr size="4">
+   <h5>The cascading style sheets(css) is used to style our websites.Using simple html makes things tougher for styling and hence css is introduced.though css can't be solely used as it is just used to markup the html.<br>There are many types of implementing css on a website.Firstly,we will be discussing about the inline css.</h5>
+   <hr size="4">
+   <h3>INLINE CSS</h3>
+   <h5 style="background-color: #FEB139;">The inline css refers adding 'style' css element to your needed html tag.say,we want to change backgroung color,so in order to do it we have to use the syntax as style="background-color:color;" inside the html tag.As u can see this particular element background color is different from other things and i used the inline css.In place of color in the above syntax used,we may replace it with simply color name or the hexadecimal code.And <a href="https://colorhunt.co/">'colorhunt'</a> is the website in which professional have already a certain good mix of colors with their hexadecimal codes and color names which can be helpful to us.</h5>
+   <hr size="4">
+   <h3>INTERNAL CSS</h3>
+   <h5>Adding css code to each  and every element is quite messy.So,in order to declare everything at one place we just simply use 'style' tag in the 'title section' which is basically a css element.In this 'style' tag we just simply write the group of elements we need to apply our css element and open braces and list the attributes needed there followed by semicolons.some of the elements are 'background-color','color','padding','border-style','border-top-style','width' and so on.Basically even every pure html website has default css elements set to it by the browsers.Coming to the 'border-style' tag if we only speeicfy one value,it's applied to all four things i.e;top,bottom,left and right.If we only specify two values,the first one is applied to top and bottom and latter applies to left and right.If we specify three values,first one applies to the top,second to left and right and third to bottom.If we specify four values they will applied in clockwise sense i.e;top,right,bottom,left.</h5>
+   <hr size="4">
+   <h5>In order to apply the styles to all the websites requiredand intead of copying the style tag everytime,we can simply use .css file and link to the websites we want to apply the css.The css file can be linked by using 'link' tag using href in the website and relate it with the sytesheet.</h5>
+   <hr size="4">
+   <h3>CSS DEBUGGING</h3>
+   <h5>The css sheets can be debugged in a browser by using developer tools console in there.And coming to hierarchy of this css types,inline css is more prior than internal css than external css.</h5>
+   <hr size="4">
+   <h3>SYNTAX OF CSS</h3>
+   <h5>The basic syntax of the css elements is 'selector{property:value;}'.Here,'selector' refers to the element which this css style is applicable to and the 'property' is the the what property of element is going to be affected and 'value' is how much it is going to be affected.It is generally preferred to list the elements properties and selector's in alphabetical for better and easier understanding.</h5>
+   <hr size="4">
+   <h3 class="newclass">COMMENTS IN CSS</h3>
+   <h5>Comments in css are done starting with '/*' and closing them with '*/'.</h5>
+   <hr size="4">
+   <h3 class="newclass">CLASSES,ID's&PSEUDOCLASSES</h3>
+   <h5>When we wanted to apply different styles for the same element and we have numerous amounts,we seperate the elements by classes and we define the styles for those classes.Let us say i use this 'h5' heading of comments and classes as class ,say 'newclass'.So,in order to apply a different style to this class,in css we use just a '.' before that class name so as to differentiate from the tags.IDs have same properities as classes but only difference there cannot be more than one id of same type where as classes of same type can be multiple.And for a particular element,there can be multiple classes,but no more than one ID.IDs start with '#' to apply styles to its element.Let's say i give an id to a pre element down here.<br></h5>
+   <pre id="newid">This text is embedded in an id.</pre>
+   <h5>And pseduoclasses are the ones that start with colon.Let us take a simple one called hover.so,here is the example with this pseudoclass.</h5>
+   <pre class="pseudo">Here,the text color changes when the cursor is hovered on it.</pre>
+   <hr size="4">
+   <h3>FAVICONS</h3>
+   <h5>These are the icons that appear on left to the tittle of your website or when you bookmark a website.so just to link them with your html files,we use link tag as link rel="icon" href="icon's path".The extension of icon should be in .ico and if after linkin your icon,if it doesn.t appear just keep ?v=2 after your icon path inside that double quotes.</h5>
+   <hr size="4">
+   <div>
+   <h3>'DIV' ELEMENT</h3>
+   <h5>just to group elements in single section,we use this 'div' element.In the html code,you can see that i have grouped this whole 'div' element description with a dic class.So,u will see it different.we can use classes and id's in these divs just as we used in previous css elements.</h5>
+   </div>
+   <hr size="4">
+   <h3>BOX MODELLING</h3>
+   <h5>As we already know that all elements in a website are simply nothing but boxes.so these boxes have particular properities we have to learn in detail.They are:
+    <dl>
+      <dt>WIDTH,SIZE,HEIGHT</dt>
+      <dd>we can adjust the actual width,heigh and size of the element using these attributes.</dd>
+      <dt>BORDER</dt>
+      <dd>We use this attribute to adjust the border type:dashed,solid,dotted,double,grrove,hidden,inherit,intitial,inset,none,outset,ridge and so on.we can also size this border by using 'border-width' attribute.we can use border-top,bottom,left.right or simply use an clockwise directed sizes as 'border-width:0px 10px 20px 30px 40px'.And also we can change the border color too.</dd>
+      <dt>PADDING</dt>
+      <dd>To have a space between the border and the content inside it,we use this padding.The syntax is 'padding:size'.This can also be declared in the ways that we declared the border width(as like clockwise or particularly mentioning the location we want to pad.)</dd>
+      <dt>MARGIN</dt>
+      <dd>Margins acts like buffer to the element.These seperates the each and every element from others.The size can be adjusted same as that of paddings and border-width's.</dd>
+    </dl>
+    Down below is an example of use of all these elements.Each of the box has 200X200px dimensions.And the first box has red color,10px border and 20px padding on four sides.Second box has yellow color with 20px border on all sides and third box has orange color with 10px border on all sides.And one vertex of square touches other.</h5>
+    <div class="box">
+    <div class="redbox">
+      <h5>This is the red box.</h5>
+    </div>
+    <div class="yellowbox">
+      <h5>This is yellow box.</h5>
+    </div>
+    <div class="orangebox">
+      <h5>This is orange box.</h5>
+    </div>
+    </div>
+    <hr size="4">
+    <h3>DISPLAY PROPERTY</h3>
+    <h5>This is the property which makes the elements appear in way that they are alligned side-by-side or one on another.This property has four different values.The general syntax is 'display:value;'.They are:
+      <dl>
+        <dt>BLOCK</dt>
+        <dd>This generally occupies the whole line and the width here can be adjusted.The general block elements are:
+          <ul>
+            <li>Paragraphs(p-tag)</li>
+            <li>Headers(h1 to h6-tags)</li>
+            <li>Divisions(div-tag)</li>
+            <li>lists and list items(ol,ul,li-tags)</li>
+            <li>Forms(form-tag)</li>
+          </ul>
+        </dd>
+        <dt>INLINE</dt>
+        <dd>This generally occupies the only dimensions that the element needs,but only problem here is the width is not adjustable.The general inline elements are:
+          <ul>
+            <li>spans(span-tag)</li>
+            <li>images(img-tag)</li>
+            <li>anchors(a-tag)</li>
+          </ul>
+        </dd>
+        <dt>BLOCK-INLINE</dt>
+        <dd>As the name suggests,it is combination of inline and block.This element only takes the dimensions it needs and also the width is adjustable.</dd>
+        <dt>NONE</dt>
+        <dd>If any element is set this value,the whole element disappears as if it is no element there in website.</dd>
+      </dl>
+    </h5>
+    <hr size="4">
+    <h3>SPAN</h3>
+    <h5>This element is an inline element which can be used to seperate that specified 'span' element to seperate from remaining elements.The below given is the the line in which a certain portion that is different is just spanned.<p>The whole thing is written in paragraph.<span class="span">This is the text that is spanned.</span>And the spanned element also uses the class 'span'. </p></h5>
+    <hr size="4">
+    <h3>VISIBILITY</h3>
+    <h5>This tag is generally used to affect the visibility of element or text.It has these attributes:
+      <dl>
+        <dt>VISIBILE</dt>
+        <dd>It's generally makes the text visible as it as.</dd>
+        <dt>HIDDEN</dt>
+        <dd>It makes the text disappear but it has itws own position reserved with a blank space there.</dd>
+        <dt>COLLAPSE</dt>
+        <dd>This element functions as 'display:none' for the tables and functions as 'visibility:hidden' for other elements.</dd>
+      </dl>
+    </h5>
+    <hr size="4">
+    
+
+  </p>
+</body>
+</html>
