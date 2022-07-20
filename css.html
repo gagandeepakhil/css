@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <meta author="gagandeep">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="download.ico?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&family=Ibarra+Real+Nova&family=Lobster&display=swap" rel="stylesheet">
+  
+  <style>
+    body{
+      background-color: aqua;
+    }
+    hr{
+      border-style:none;
+      border-top-style: dashed;
+      border-top-width:2px;
+      color:aqua;
+      width:99%;
+    }
+  </style>
+
+</head>
+<body style="background-color:#F9F2ED;">
+  <p>
+  <hr size="4">
+  <div id="heading">
+   <center><h2>CSS CODEBOOK</h2></center>
+  </div>
+  <br>
+   <center><pre>           -By gagan deep</pre></center>
+   <hr size="4">
+   <h5>The cascading style sheets(css) is used to style our websites.Using simple html makes things tougher for styling and hence css is introduced.though css can't be solely used as it is just used to markup the html.<br>There are many types of implementing css on a website.Firstly,we will be discussing about the inline css.</h5>
+   <hr size="4">
+   <h3>INLINE CSS</h3>
+   <h5 style="background-color: #FEB139;">The inline css refers adding 'style' css element to your needed html tag.say,we want to change backgroung color,so in order to do it we have to use the syntax as style="background-color:color;" inside the html tag.As u can see this particular element background color is different from other things and i used the inline css.In place of color in the above syntax used,we may replace it with simply color name or the hexadecimal code.And <a href="https://colorhunt.co/">'colorhunt'</a> is the website in which professional have already a certain good mix of colors with their hexadecimal codes and color names which can be helpful to us.</h5>
+   <hr size="4">
+   <h3>INTERNAL CSS</h3>
+   <h5>Adding css code to each  and every element is quite messy.So,in order to declare everything at one place we just simply use 'style' tag in the 'title section' which is basically a css element.In this 'style' tag we just simply write the group of elements we need to apply our css element and open braces and list the attributes needed there followed by semicolons.some of the elements are 'background-color','color','padding','border-style','border-top-style','width' and so on.Basically even every pure html website has default css elements set to it by the browsers.Coming to the 'border-style' tag if we only speeicfy one value,it's applied to all four things i.e;top,bottom,left and right.If we only specify two values,the first one is applied to top and bottom and latter applies to left and right.If we specify three values,first one applies to the top,second to left and right and third to bottom.If we specify four values they will applied in clockwise sense i.e;top,right,bottom,left.</h5>
+   <hr size="4">
+   <h5>In order to apply the styles to all the websites requiredand intead of copying the style tag everytime,we can simply use .css file and link to the websites we want to apply the css.The css file can be linked by using 'link' tag using href in the website and relate it with the sytesheet.</h5>
+   <hr size="4">
+   <h3>CSS DEBUGGING</h3>
+   <h5>The css sheets can be debugged in a browser by using developer tools console in there.And coming to hierarchy of this css types,inline css is more prior than internal css than external css.</h5>
+   <hr size="4">
+   <h3>SYNTAX OF CSS</h3>
+   <h5>The basic syntax of the css elements is 'selector{property:value;}'.Here,'selector' refers to the element which this css style is applicable to and the 'property' is the the what property of element is going to be affected and 'value' is how much it is going to be affected.It is generally preferred to list the elements properties and selector's in alphabetical for better and easier understanding.</h5>
+   <hr size="4">
+   <h3 class="newclass">COMMENTS IN CSS</h3>
+   <h5>Comments in css are done starting with '/*' and closing them with '*/'.</h5>
+   <hr size="4">
+   <h3 class="newclass">CLASSES,ID's&PSEUDOCLASSES</h3>
+   <h5>When we wanted to apply different styles for the same element and we have numerous amounts,we seperate the elements by classes and we define the styles for those classes.Let us say i use this 'h5' heading of comments and classes as class ,say 'newclass'.So,in order to apply a different style to this class,in css we use just a '.' before that class name so as to differentiate from the tags.IDs have same properities as classes but only difference there cannot be more than one id of same type where as classes of same type can be multiple.And for a particular element,there can be multiple classes,but no more than one ID.IDs start with '#' to apply styles to its element.Let's say i give an id to a pre element down here.<br></h5>
+   <pre id="newid">This text is embedded in an id.</pre>
+   <h5>And pseduoclasses are the ones that start with colon.Let us take a simple one called hover.so,here is the example with this pseudoclass.</h5>
+   <pre class="pseudo">Here,the text color changes when the cursor is hovered on it.</pre>
+   <hr size="4">
+   <h3>FAVICONS</h3>
+   <h5>These are the icons that appear on left to the tittle of your website or when you bookmark a website.so just to link them with your html files,we use link tag as link rel="icon" href="icon's path".The extension of icon should be in .ico and if after linkin your icon,if it doesn.t appear just keep ?v=2 after your icon path inside that double quotes.</h5>
+   <hr size="4">
+   <div>
+   <h3>'DIV' ELEMENT</h3>
+   <h5>just to group elements in single section,we use this 'div' element.In the html code,you can see that i have grouped this whole 'div' element description with a dic class.So,u will see it different.we can use classes and id's in these divs just as we used in previous css elements.</h5>
+   </div>
+   <hr size="4">
+   <h3>BOX MODELLING</h3>
+   <h5>As we already know that all elements in a website are simply nothing but boxes.so these boxes have particular properities we have to learn in detail.They are:
+    <dl>
+      <dt>WIDTH,SIZE,HEIGHT</dt>
+      <dd>we can adjust the actual width,heigh and size of the element using these attributes.</dd>
+      <dt>BORDER</dt>
+      <dd>We use this attribute to adjust the border type:dashed,solid,dotted,double,grrove,hidden,inherit,intitial,inset,none,outset,ridge and so on.we can also size this border by using 'border-width' attribute.we can use border-top,bottom,left.right or simply use an clockwise directed sizes as 'border-width:0px 10px 20px 30px 40px'.And also we can change the border color too.</dd>
+      <dt>PADDING</dt>
+      <dd>To have a space between the border and the content inside it,we use this padding.The syntax is 'padding:size'.This can also be declared in the ways that we declared the border width(as like clockwise or particularly mentioning the location we want to pad.)</dd>
+      <dt>MARGIN</dt>
+      <dd>Margins acts like buffer to the element.These seperates the each and every element from others.The size can be adjusted same as that of paddings and border-width's.</dd>
+    </dl>
+    Down below is an example of use of all these elements.Each of the box has 200X200px dimensions.And the first box has red color,10px border and 20px padding on four sides.Second box has yellow color with 20px border on all sides and third box has orange color with 10px border on all sides.And one vertex of square touches other.</h5>
+    <div class="box">
+    <div class="redbox">
+      <h5>This is the red box.</h5>
+    </div>
+    <div class="yellowbox">
+      <h5>This is yellow box.</h5>
+    </div>
+    <div class="orangebox">
+      <h5>This is orange box.</h5>
+    </div>
+    </div>
+    <hr size="4">
+    <h3>DISPLAY PROPERTY</h3>
+    <h5>This is the property which makes the elements appear in way that they are alligned side-by-side or one on another.This property has four different values.The general syntax is 'display:value;'.They are:
+      <dl>
+        <dt>BLOCK</dt>
+        <dd>This generally occupies the whole line and the width here can be adjusted.The general block elements are:
+          <ul>
+            <li>Paragraphs(p-tag)</li>
+            <li>Headers(h1 to h6-tags)</li>
+            <li>Divisions(div-tag)</li>
+            <li>lists and list items(ol,ul,li-tags)</li>
+            <li>Forms(form-tag)</li>
+          </ul>
+        </dd>
+        <dt>INLINE</dt>
+        <dd>This generally occupies the only dimensions that the element needs,but only problem here is the width is not adjustable.The general inline elements are:
+          <ul>
+            <li>spans(span-tag)</li>
+            <li>images(img-tag)</li>
+            <li>anchors(a-tag)</li>
+          </ul>
+        </dd>
+        <dt>BLOCK-INLINE</dt>
+        <dd>As the name suggests,it is combination of inline and block.This element only takes the dimensions it needs and also the width is adjustable.</dd>
+        <dt>NONE</dt>
+        <dd>If any element is set this value,the whole element disappears as if it is no element there in website.</dd>
+      </dl>
+    </h5>
+    <hr size="4">
+    <h3>SPAN</h3>
+    <h5>This element is an inline element which can be used to seperate that specified 'span' element to seperate from remaining elements.The below given is the the line in which a certain portion that is different is just spanned.<p>The whole thing is written in paragraph.<span class="span">This is the text that is spanned.</span>And the spanned element also uses the class 'span'. </p></h5>
+    <hr size="4">
+    <h3>VISIBILITY</h3>
+    <h5>This tag is generally used to affect the visibility of element or text.It has these attributes:
+      <dl>
+        <dt>VISIBILE</dt>
+        <dd>It's generally makes the text visible as it as.</dd>
+        <dt>HIDDEN</dt>
+        <dd>It makes the text disappear but it has itws own position reserved with a blank space there.</dd>
+        <dt>COLLAPSE</dt>
+        <dd>This element functions as 'display:none' for the tables and functions as 'visibility:hidden' for other elements.</dd>
+      </dl>
+    </h5>
+    <hr size="4">
+    <h3>POISTION</h3>
+    <h5>This property tells us how the element is positioned in the website.The syntax for this position is 'position:value'.The different values are:
+      <dl>
+        <dt>STATIC</dt>
+        <dd>In general,every element is set default to this 'static' position.when this is set,it follows the general html flow upto what we have learnt.we also can't adjust the top,left,right,bottom positions when it is set to static.</dd>
+        <dt>RELATIVE</dt>
+        <dd>Here,the term 'relative' means the properity is relative to the position away from the element when it is set to static.Here we can adjust the top,left,right and up attributes.If we adjust some value to top,the element will be pushed down to that value realtive to the static position and similiarly pushed left when set to right,pushed up when set to down,pushed right when set to left.Also,when the position is set to relative,it doesn't affect other element's position and its just simply  changes it poisiton.Below is example when the red box,green box is set to poisition 'left' of value 50px,100px respectively.</dd>
+        <div class="boxes">
+          <div id="bluebox"></div>
+          <div id="redbox"></div>
+          <div id="greenbox"></div>
+        </div>
+        <dt>ABSOLUTE</dt>
+        <dd>Here,the position is set relatively to the parent element in which the the given elemen is included.If no parent element is present ,then it is relative to body element of website.Here,in this type of absolute positioning,the remaining element's flow is also disturbed i.e, when an element is positioned it completely moves from there and the elements next to it takes the positioning.</dd>
+        <dt>FIXED</dt>
+        <dd>If an element is positioned to this value,then it is fixed at that given position i.e, even though we scroll down the website,the element is fixed at its position.I will be fixing the css codebook heading in this website just to give an example.</dd>
+      </dl>
+    </h5>
+    <hr size="4">
+    <h3>MARGIN</h3>
+    <h5>This is used to set the margin area of element on the all four sides.And if the value is set to it generally alligns the content in to be horizontally cenetred.The values can be set to it as that of margins and border-widths.And when value is set to 'inherit' it copies the prperities of it's parent elements.</h5>
+    <hr size="4">
+    <h3>TEXT ALLIGNMENT</h3>
+    <h5>The general syntax for text allignment is 'text-align:value'.The values are:
+      <dl>
+        <dt>RIGHT</dt>
+        <dd>aligns text to right.</dd>
+        <dt>LEFT</dt>
+        <dd>aligns text to left.</dd>
+        <dt>CENTER</dt>
+        <dd>aligns text to center.</dd>
+        <dt>INHERIT</dt>
+        <dd>inherit's the value of its parent element.</dd>
+        <dd>JUSTIFY</dd>
+        <dd>makes the text aligned to both left and right by inserting spaces between words except for the last line.</dd>
+        <dt>JUSTIFY-ALL</dt>
+        <dd>This is also similiar to justify but makes the last line also affected.</dd>
+      </dl>
+    </h5>
+    <hr size="4">
+    <h3>FONT STYLING</h3>
+    <h5>Theere are geenrally 5 font-familes available in css3.Those are:
+      <dl>
+        <li>serif</li>
+        <li>sansserif</li>
+        <li>monospace</li>
+        <li>cursive</li>
+        <li>fantasy</li>
+      </dl>
+      Sometimes,just simply applying these font-families doesn't change the font as the systems do not support them.So,the simple resource we can use is <a href="https://fonts.google.com/">Google fonts</a>.Here you can simply select the fonts you want to embed in your website and just simply link them.Below are some examples:
+      <p id="new">Cursive writing</p><p id="new1">Serif</p>
+    </h5>
+    <hr size="4">
+    <h3>FONT SIZING</h3>
+    <h5>Font sizing is generally done in two ways:static and dynamic.'static' as the word refers,the size remains unchanged even the browser's scae is changed.And 'dynamic' means it changes according to the browser or the device they use.There are 4 ways of size setting:'px','%','em','rem'.
+      <dl>
+        <dt>PIXELS</dt>
+        <dd>This sizes the website's fot in static mode.</dd>
+        <dt>PERCENTAGES</dt>
+        <dd>In general,100% of size refers to 16px.This dynamically sizes the website's fonts.</dd>
+        <dt>EM</dt>
+        <dd>This unit is equal to 100% or 16px.This too dynamically sizes the website's fonts.</dd>
+        <dt>REM</dt>
+        <dd>This is also similiar to 'em.But when we use percentages or 'em these inherit the property i.e,lets say our website's body element already has some dynamic size alloted,and then we allot some dynamic size to the other element included in it,then the included element size is added with  the body's size which may lead to unexpected results.So,this rem dynamically allocates the sizing but without inheritance.</dd>
+      </dl>
+    </h5>
+    <hr size="4">
+    <h3>FONT WEIGHT</h3>
+    <h5>It generally refers to the thickness of the fonts.It can be set to:
+      <li id="normal">normal-font weight=400</li>
+      <li id="bold">bold-font weight=700</li>
+      <li id="lighter">lighter</li>
+      <li id="bolder">bolder</li>
+      <li id="value">set to any specific numeric value from 1 to 1000.(e.g.:900)</li>
+    </h5>
+    <hr size="4">
+    <h3>LINE HEIGHT</h3>
+    <h5>It generally adjust's the height of the lines or just simply spaces the gaps between lines.The values are:
+      <dl>
+        <dt>NORMAL</dt>
+        <dd>The default value is 1.2.</dd>
+        <dt>NUMERIC VALUE(UNITLESS)</dt>
+        <dd>The value is the height that equals to value times the size of the font.And this has no inheritance property.</dd>
+        <dt>PERCENTAGE</dt>
+        <dd>The size is equals to percent times the font size.</dd>
+      </dl>
+    </h5>
+    <hr size="4">
+    <h3>FLOAT AND CLEAR</h3>
+    <h5>'float' is used to mske the text wrap aroung particular element.The clear property specifies what should happen with the element that is next to a floating element.The clear property can have one of the following values:
+      <dl>
+        <li>none - The element is not pushed below left or right floated elements. This is default</li>
+        <li>left - The element is pushed below left floated elements</li>
+        <li>right - The element is pushed below right floated elements</li>
+        <li>both - The element is pushed below both left and right floated elements</li>
+        <li>inherit - The element inherits the clear value from its parent</li>
+      </dl>Float only has 'left','right','none','inherit' values.
+    </h5>
+    <hr size="4">
+  </p>
+</body>
+</html>

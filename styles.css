@@ -1,0 +1,138 @@
+body{
+    background-color: aqua;
+    font-size:large;
+    text-align: left;
+    line-height: 1.35;
+    padding-left: 10px;
+  }
+  dt{
+    color:coral;
+  }
+  hr{
+    border-style: none;
+    border-top-style: dashed;
+    border-top-width:2px;
+    color:aqua;
+    width:99%;
+  }
+  h1,h2{
+    color: #EB4747;
+    margin:0;
+  }
+  h5{
+    color:#635666;
+  }
+  div{
+    background-color: crimson;
+    color: aliceblue;
+  }
+  /********************************************classes***********************************/
+  .newclass{
+    color:chartreuse;
+    background-color: chocolate;
+  }
+  .pseudo:hover{
+    background-color: blueviolet;
+  }
+  .redbox{
+    background-color: red;
+    border-width:10px;
+    border-style:solid ;
+    border-color: black;
+    padding:20px;
+    width:200px;
+    height:200px;
+  }
+  .yellowbox{
+    background-color: yellow;
+    border-width:20px;
+    border-style:solid ;
+    border-color: black;
+    margin:0px 0px 0px 260px;
+    width:200px;
+    height:200px;
+  }
+  .orangebox{
+    background-color: orange;
+    border-width:10px;
+    border-style:solid ;
+    border-color: black;
+    margin:0px 0px 0px 500px;
+    width:200px;
+    height:200px;
+  }
+  .box{
+    background-color: white;
+    margin-right: 500px;
+    width:720px;
+  }
+  .span{
+    color:aqua;
+    background-color: brown;
+  }
+  .boxes{
+    background-color: white;
+    display:inline-block;
+    width:150px;
+    height:50px;
+  }
+  
+  /********************************************classes***********************************/
+  #newid{
+    color:green;
+  }
+  #bluebox{
+    background-color: blue;
+    margin:0;
+    width:50px;
+    height:50px;
+    position:relative;
+  }
+  #redbox{
+    background-color: red;
+    
+    margin:0;
+    width:50px;
+    height:50px;
+    position:relative;
+    left:50px;
+    bottom: 50px;
+  }
+  #greenbox{
+    background-color: green;
+    margin:0;
+    width:50px;
+    height:50px;
+    position:relative;
+    left:100px;
+    bottom:100px;
+  }
+  #heading{
+    background-color:#18978F ;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    
+  }
+  #new{
+    font-family: 'Lobster', cursive;
+  }
+  #new1{
+    font-family: 'Ibarra Real Nova', serif;
+  }
+  #normal{
+    font-weight: normal;
+  }
+  #bold{
+    font-weight: bold;
+  }
+  #lighter{
+    font-weight: lighter;
+  }
+  #bolder{
+    font-weight: bolder;
+  }
+  #value{
+    font-weight: 990;
+  }
