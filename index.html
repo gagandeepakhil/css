@@ -235,6 +235,20 @@
       </dl>Float only has 'left','right','none','inherit' values.
     </h5>
     <hr size="4">
+        <h3>Z-INDEX</h3>
+      <h5>The z-index property specifies the stack order of an element.An element with greater stack order is always in front of an element with a lower stack order.z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top. </h5>
+      <hr size="4">
+      <h3>MEDIA QUERIES</h3>
+      <h5>The CSS Media Query gives you a way to apply CSS only when the browser and device environment matches a rule that you specify, for example "viewport is wider than 480 pixels". Media queries are a key part of responsive web design, as they allow you to create different layouts depending on the size of the viewport, but they can also be used to detect other things about the environment your site is running on, for example whether the user is using a touchscreen rather than a mouse. In this lesson you will first learn about the syntax used in media queries, and then move on to use them in a worked example showing how a simple design might be made responsive.The simplest media query syntax looks like :
+        <li>@media media-type and (media-feature-rule) {
+        /* CSS rules go here */
+      }</li>It consists of:
+      <li>A media type, which tells the browser what kind of media this code is for (e.g. print, or screen).</li>
+      <li>A media expression, which is a rule, or test that must be passed for the contained CSS to be applied.</li>
+      <li>A set of CSS rules that will be applied if the test passes and the media type is correct.</li>
+      There are three types of media types:'all','print','screen'.After specifying media type,you can target to media feautures like min-width,max-width,etc.
+     </h5>
+     <hr size="4">
   </p>
 </body>
 </html>
