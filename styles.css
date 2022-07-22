@@ -140,3 +140,9 @@ body{
   #value{
     font-weight: 990;
   }
+  /*****************************MEDIA QUERIES*********************************/
+ @media screen (max-width:356px){
+  body{
+     padding-top:56.25%;
+   }
+ }
